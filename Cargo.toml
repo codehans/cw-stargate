@@ -27,6 +27,7 @@ incremental = false
 overflow-checks = true
 
 [features]
+default = ["cosmwasm-std/stargate"]
 # for more explicit tests, cargo test --features=backtraces
 backtraces = ["cosmwasm-std/backtraces"]
 # use library feature to disable all instantiate/execute/query exports
@@ -48,6 +49,7 @@ cw2 = "0.15.1"
 schemars = "0.8.10"
 serde = { version = "1.0.145", default-features = false, features = ["derive"] }
 thiserror = { version = "1.0.31" }
+cosmos-sdk-proto = "0.14.0"
 
 [dev-dependencies]
 cw-multi-test = "0.15.1"
